@@ -1,19 +1,16 @@
 {
-  "logo": {
-    "url": "pkg/logo/logo.jpg",
-    "description": "Project logo"
-  },
   "name": "basic-tooling",
   "version": "0.0.0",
   "description": "A boilerplate for *Node.js* projects.",
   "main": "index.js",
   "scripts": {
-    "clean": "shx rm -r docs/**/* && true",
+    "clean": "shx rm -rf docs/**/* && true",
     "lint": "eslint src/**/*.js -c conf/build/eslint.json",
     "test": "mocha test/**/*.js",
-    "cover": "istanbul cover _mocha -- -u exports -R spec test/**/*.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -u exports -R spec test/**/*.js",
     "build:docs": "jsdoc src -r -d docs",
     "build:readme": "hbsrender -t pkg/readme/README.md.hbs -c ./package.json -p contribute:pkg/readme/CONTRIBUTE.md.hbs -p installation:pkg/readme/INSTALL.md.hbs > README.md",
+    "update:version": "npm version patch --force && npm run build:readme",
     "precommit": "npm run lint",
     "prepush": "npm run test"
   },
@@ -34,8 +31,7 @@
     "jsdoc": "3.4.2",
     "mocha": "3.0.2",
     "onchange": "3.0.2",
-    "shx": "0.1.4",
-    "sinon": "1.17.5"
+    "shx": "0.1.4"
   },
   "dependencies": {
     "fs-extra": "0.30.0",
