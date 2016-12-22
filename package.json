@@ -1,5 +1,5 @@
 {
-  "name": "basic-tooling",
+  "name": "generic-nodejs-toolchain",
   "version": "0.0.0",
   "description": "A boilerplate for *Node.js* projects.",
   "main": "index.js",
@@ -17,7 +17,7 @@
   "author": "Stefano Butera <stefano.butera@nethnic.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lud77/basic-tooling.git"
+    "url": "https://github.com/lud77/generic-nodejs-toolchain.git"
   },
   "documentation": "docs/index.html",
   "license": "MIT",
@@ -35,7 +35,6 @@
   },
   "dependencies": {
     "fs-extra": "0.30.0",
-    "immutable": "3.8.1",
     "winston": "2.2.0"
   }
 }
