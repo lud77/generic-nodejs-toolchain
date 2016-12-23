@@ -1,4 +1,4 @@
-# generic-nodejs-toolchain v0.0.2
+# generic-nodejs-toolchain v0.0.3
 > A boilerplate for *Node.js* projects.
 
 
@@ -51,9 +51,9 @@ this will add 1 to the Patch version number, rebuild the README.md and "git add"
 
 
 
-## Templated README
+### Templated README
 
-This package provides a system to simplify the generation of README files. The system makes use of the [Handlebars](https://github.com/wycats/handlebars.js/) template engine to allow you to pull values from the package.json automatically and include external partial templates. 
+This package provides a system to simplify the generation of README files. The system makes use of the [Handlebars](https://github.com/wycats/handlebars.js/) template engine to allow you to pull values from the package.json automatically and include external partial templates. It also makes use of the [HbsRender](https://github.com/lud77/hbs-render) CLI rendering tool.
 
 The templates (including the source of this README) are kept in the /pkg/readme folder. 
 
@@ -128,10 +128,12 @@ The package includes [Winston](http://github.com/winstonjs/winston) for the logg
 
 ## Roadmap
 
-I plan to improve this package and its brother package [express-nodejs-toolchain](https://github.com/lud77/express-nodejs-toolchain) with the addition of many features:
+I plan to improve this package and its brother package [express-nodejs-toolchain](https://github.com/lud77/express-nodejs-toolchain) with the addition of many features. Among those:
 
-- invoke.sh script (equivalent of the invoke.bat script)
+- invoke.sh script (Bash equivalent of the invoke.bat script)
 - automated download of feeds from activity streams of project management software to generate HISTORY.md files
+
+Since the main focus is on avoiding feature bloat, many aspects will be left out of this package, including facilities for transpilation and modules managing Promises. Some of those aspects however, especially transpilation, will be addressed in [express-nodejs-toolchain](https://github.com/lud77/express-nodejs-toolchain).
 
 
 
