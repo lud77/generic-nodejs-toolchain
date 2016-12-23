@@ -1,6 +1,4 @@
-![]()
-
-# generic-nodejs-toolchain v0.0.1
+# generic-nodejs-toolchain v0.0.2
 > A boilerplate for *Node.js* projects.
 
 
