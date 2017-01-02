@@ -1,4 +1,4 @@
-# generic-nodejs-toolchain v0.0.5
+# generic-nodejs-toolchain v0.0.6
 > A boilerplate for *Node.js* projects.
 
 
